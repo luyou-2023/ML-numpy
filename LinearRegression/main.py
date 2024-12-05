@@ -1,7 +1,13 @@
 import numpy as np
 import matplotlib.pyplot as plt
 
-
+'''
+1. 模型公式
+2. 训练数据，随机参数预测值
+3. 损失函数求预测值与真实值的差异
+4. 对损失函数求导，求出参数变为与损失值的关系
+5. 根据导数更新参数，使得损失值越来越小，预测值接近真实值，次数的参数逼近最优解
+'''
 class LinearRegression:
     def __init__(self, lr=0.0001, thr=1e-6):
         self.lr = lr
